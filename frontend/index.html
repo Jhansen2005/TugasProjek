@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,4 +45,52 @@
 
   <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="list-view">
+      <h1>🔥 Pokémon List 🔥</h1>
+      <div id="pokemon-list"></div>
+    </div>
+
+    <div id="detail-view">
+      <a href="#" class="back-link" onclick="showList(); return false;">⬅ Back to List</a>
+      <div class="detail-container">
+        <div class="detail-header">
+          <div class="detail-id">#<span id="detail-number"></span></div>
+          <img id="detail-artwork" src="" alt="">
+          <h2 id="detail-name"></h2>
+          <div id="detail-types" class="pokemon-types"></div>
+          <div class="favorite-count">❤️ <span id="detail-fav">0</span> votes</div>
+        </div>
+        
+        <div class="stats-container">
+          <div class="stats-title">📊 Base Stats</div>
+          <div id="detail-stats"></div>
+        </div>
+
+        <div class="vote-buttons">
+          <button class="vote-btn vote" id="vote-button" onclick="voteForPokemon()">
+            👍 Vote
+          </button>
+          <button class="vote-btn unvote" id="unvote-button" onclick="unvoteForPokemon()">
+            👎 Unvote
+          </button>
+        </div>
+        <div id="vote-status" class="vote-status"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+>>>>>>> 7866ab28381d24c0b00967169bdb73baf8dc4fc7
 </html>
