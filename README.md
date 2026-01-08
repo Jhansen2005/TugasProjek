@@ -1,2 +1,0 @@
-# Assesment
-Web Pokedex
