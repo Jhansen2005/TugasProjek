@@ -31,7 +31,7 @@ const VISITOR_ID = getVisitorId();
 // Render daftar Pokémon
 async function fetchAndRenderPokemon(page = 1) {
   try {
-    const res = await fetch(`proud-appreciation-production.up.railway.app/pokemon?page=${page}&limit=20`, {
+    const res = await fetch(`https://proud-appreciation-production.up.railway.app/pokemon?page=${page}&limit=20`, {
       headers: {
         'x-visitor-id': VISITOR_ID
       }
