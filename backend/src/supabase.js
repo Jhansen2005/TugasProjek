@@ -7,6 +7,6 @@ if (!supabaseUrl || !supabaseKey) {
   throw new Error("SUPABASE_URL or SUPABASE_KEY is missing");
 }
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default supabase;
