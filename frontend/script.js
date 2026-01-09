@@ -195,7 +195,7 @@ async function voteForPokemon() {
 
     // 2. Call Backend
     try {
-      const res = await fetch(`http://localhost:3000/pokemon/${currentPokemon.id}/vote`, {
+      const res = await fetch(`https://proud-appreciation-production.up.railway.app/pokemon/${currentPokemon.id}/vote`, {
         method: 'POST',
         headers: { 'x-visitor-id': VISITOR_ID }
       });
@@ -235,7 +235,7 @@ async function unvoteForPokemon() {
 
     // 2. Call Backend
     try {
-      const res = await fetch(`http://localhost:3000/pokemon/${currentPokemon.id}/vote`, {
+      const res = await fetch(`https://proud-appreciation-production.up.railway.app0/pokemon/${currentPokemon.id}/vote`, {
         method: 'DELETE',
         headers: { 'x-visitor-id': VISITOR_ID }
       });
